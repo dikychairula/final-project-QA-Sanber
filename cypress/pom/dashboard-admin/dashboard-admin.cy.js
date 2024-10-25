@@ -11,19 +11,28 @@ export default class adminPage{
   static inputPassword(){
     return cy.get('[name="password"]');
   }
+  static AddUserinputPassword(){
+    return cy.get('[type="password"]').eq(0);
+  }
+  static AddUserinputConfirmPassword(){
+    return cy.get('[type="password"]').eq(1);
+  }
+  static searchDropdown(){
+    return cy.get('.oxd-select-text');
+  }
+  static inputSearchUsername(){
+    return cy.get('[class="oxd-input oxd-input--active"]').eq(1);
+  }
+  static inputEmployee(){
+    return cy.get('[placeholder="Type for hints..."]');
+  }
+  static validationUsernameFound(){
+    return cy.get('div[data-v-6c07a142]').eq(0);
+  }
   static buttonSubmit(){
-    return cy.get('[type = "submit"]');
+    return cy.get('[type="submit"]');
   }
-  static verifyDashboardPage(){
-    return cy.get('h6').contains('Dashboard');
-  }
-  static invalidCredentials(){
-    return cy.get('[class="oxd-alert-content oxd-alert-content--error"]');
-  }
-  static requireUsernameMessage(){
-    return cy.get('.oxd-input-field-error-message');
-  }
-  static requirePasswordMessage(){
-    return cy.get('.oxd-input-field-error-message');
+  static buttonAddUser(){
+    return cy.contains('button', 'Add');
   }
 }
