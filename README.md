@@ -1,4 +1,4 @@
-# Final Project QA Samber
+# Final Project QA Sanbercode
 
 ## List of Test Case
 | Test Case ID |     Description     |   Status   |
