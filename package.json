@@ -1,5 +1,5 @@
 {
-  "name": "bdd-cypress-cucumber-demo",
+  "name": "final-project-qa-sanbercode",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,7 +7,7 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "| Test Case ID |     Description     |   Status   |\r | -------| ----------------- | ------------- |\r |  TC001  | Login with valid credentials | passed  |\r |  TC002  | User Login with invalid password    | passed |\r |  TC003   | User Login with invalid username       | passed|\r |  TC004   | User Login with invalid username and password  | passed  |\r |  TC005   | User Login with empty username and password  | passed  |",
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^21.0.2",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
